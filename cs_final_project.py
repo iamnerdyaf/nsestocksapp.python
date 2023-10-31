@@ -15,7 +15,7 @@ from jugaad_data.nse import NSELive
 root = ThemedTk(theme='breeze')                                                     
 b=Frame(root,bg='black')                                                            
 b.pack()
-img=ImageTk.PhotoImage(Image.open('C:/Users/Om Choubey/Desktop/stvis.jpg'))         
+img=ImageTk.PhotoImage(Image.open('Path of stvis.jpg'))         
 label=Label(b,image=img,bg='black')                                                 
 label.grid(row=0,column=0)
 width=685                                                                           
@@ -34,7 +34,7 @@ root.mainloop()
 
 root=ThemedTk(theme='breeze')
 root.title('  Trading Titan')
-icon_photo=PhotoImage(file='C:/Users/Om Choubey/Desktop/logo.png')
+icon_photo=PhotoImage(file='Path of logo.png')
 root.iconphoto(False,icon_photo)
 root.geometry('1536x789+-3+0')
 root.resizable(0,0)
@@ -613,22 +613,22 @@ timelbl.pack(side=RIGHT,padx= 50)
 ToolTip(timelbl,msg='Time',delay=0.5)
 time_()
 
-img1=ImageTk.PhotoImage(Image.open('C:/Users/Om Choubey/Desktop/home.png'))
+img1=ImageTk.PhotoImage(Image.open('Path to home.png'))
 home_button=Button(frame,image=img1,bg='white',activebackground='white',width=45,height=35,relief='sunken',bd=0)
 home_button.pack(side=LEFT,padx= 143)
 ToolTip(home_button,msg='Home',delay=0.5)
 
-img2=ImageTk.PhotoImage(Image.open('C:/Users/Om Choubey/Desktop/graph.png'))
+img2=ImageTk.PhotoImage(Image.open('Path to graph.png'))
 markets_button=Button(frame,image=img2,bg='white',activebackground='white',width=39,height=35,relief='sunken',bd=0)
 markets_button.pack(side=LEFT,padx= 128)
 ToolTip(markets_button,msg='Markets',delay=0.5)
 
-img3=ImageTk.PhotoImage(Image.open('C:/Users/Om Choubey/Desktop/user.png'))
+img3=ImageTk.PhotoImage(Image.open('Path to user.png'))
 login_button=Button(frame,image=img3,bg='white',activebackground='white',width=35,height=35,relief='sunken',bd=0)
 login_button.pack(side=RIGHT,padx= 118)
 ToolTip(login_button,msg='Login/Sign-up',delay=0.5)
 
-img4=ImageTk.PhotoImage(Image.open('C:/Users/Om Choubey/Desktop/logotransparent.png'))
+img4=ImageTk.PhotoImage(Image.open('Path to logotransparent.png'))
 logo_button=Button(frame,image=img4,bg='white',activebackground='white',height=35,width=44,relief='sunken',bd=0)
 logo_button.pack(side=BOTTOM,anchor=CENTER,pady=0.5)
 
@@ -689,17 +689,17 @@ def alarmalert():
 
     if market_close_day1!='Saturday' or market_close_day1!='Sunday':
         if market_preopening_time51<=now1<=market_preopening_time52:
-            playsound('C:/Users/Om Choubey/Desktop/warningbell.mp3')
+            playsound('Path to warningbell.mp3')
         elif market_preopening_time1<=now1<=market_preopening_time2:
-            playsound('C:/Users/Om Choubey/Desktop/finalbell.mp3')
+            playsound('Path to finalbell.mp3')
         elif market_opening_time51<=now1<=market_opening_time52:
-            playsound('C:/Users/Om Choubey/Desktop/warningbell.mp3')
+            playsound('Path to warningbell.mp3')
         elif market_opening_time1<=now1<=market_opening_time2:
-            playsound('C:/Users/Om Choubey/Desktop/finalbell.mp3')
+            playsound('Path to finalbell.mp3')
         elif market_closing_time51<=now1<=market_closing_time52:
-            playsound('C:/Users/Om Choubey/Desktop/warningbell.mp3')
+            playsound('Path to warningbell.mp3')
         elif market_closing_time1<=now1<=market_closing_time2:
-            playsound('C:/Users/Om Choubey/Desktop/finalbell.mp3')
+            playsound('Path to finalbell.mp3')
         else:
             root.after(998,alarmalert)
     elif market_close_day1=='Saturday' or market_close_day1=='Sunday':
