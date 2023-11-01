@@ -3,4 +3,4 @@ Python tkinter application to view the latest and live details of indexes and st
 
 This was created as part of a school project. It is still in its initial stages and can be updated to greater functionality. 
 
-Although limited my the programmer's rudimentary knowledge, the project has a graet scope for expansion.
+Although limited by the programmer's rudimentary knowledge, the project has a graet scope for expansion.
